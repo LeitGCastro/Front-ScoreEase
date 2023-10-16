@@ -4,5 +4,31 @@
 body{
     font-family: 'Poppins';
     font-weight: 400;
+    font-size: 16px;
     
 }
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 24px;
+    background-color: var(--white-color);
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    bottom: 0;    
+}
+
+
+.use-terms{
+    display: flex;
+    gap: 24px;
+     
+}
+
+.use-terms h2{
+    font-size: 16px;
+
+}
+
+
