@@ -9,3 +9,7 @@ ul, li, a{
     list-style-type: none;
     color: inherit;
 }
+
+p{
+    margin-bottom: 0;
+}
