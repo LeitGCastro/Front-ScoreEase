@@ -2,11 +2,12 @@
 
 
 body{
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1em;
     color: var(--text-default-color);
     background-color: var(--background-color-page );
+    height: 100vh;
 }
 
 header, .logo, .notification-and-profile-information, .profile-information{
@@ -15,16 +16,15 @@ header, .logo, .notification-and-profile-information, .profile-information{
 
 header{
     background-color: var(--white-color);
-    box-shadow: 10px 0 30px rgba(0, 0, 0, 0.05);
+    box-shadow: 0.6em 0 1.8em rgba(0, 0, 0, 0.05);
     max-height: 100%;
 }
 
 .logo{
-    padding: 24px 32px ;
-    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.01);
-    gap: 8px;
+    padding: 1.5em 2em ;
+    box-shadow: 1.6em 0 1.6em rgba(0, 0, 0, 0.01);
+    gap: 0.5em;
 }
-
 
 .arrow-sidebar{
     margin: auto;
@@ -33,12 +33,14 @@ header{
 .arrow-sidebar img{
     background-color: var(--default-color);
     border-radius: 50%;
-    padding: 6px;
+    padding: 0.3em;
+    transform: translateX(-50%);
+    cursor: pointer;
 }
 
 
 .navbar{
-    padding: 16px 32px;
+    padding: 1em 2em;
 }
 
 .button-search {
@@ -53,11 +55,11 @@ header{
 }
 
 .searchbar{
-    padding: 4px 16px;
-    border: 2px solid #E9ECEF;
-    border-radius: 10px;
-    gap: 8px;
-    max-height: 36px;
+    padding: 0.25em 1em;
+    border: 0.125em solid #E9ECEF;
+    border-radius: 0.6em;
+    gap: 0.5em;
+    max-height: 2.25em;
 }
 
 .navbar{
@@ -72,68 +74,83 @@ header{
 
 .icons-information{
     display: block;
-    gap: 16px;
+    gap: 1em;
 }
 
 .profile-information{
-    gap: 16px;
-    margin: 0 8px;
+    gap: 1em;
+    margin: 0 0.5em;
 }
 
 .profile-information img {
-    max-width: 45px;
-    max-height: 45px;
+    max-width: 2.8em;
+    max-height: 2.8em;
     border-radius: 50%;
     margin: auto;
 }
 
 .name-and-job-role h2{
-    font-size: 16px;
+    font-size: 1em;
 }
 
 .name-and-job-role p{
-    font-size: 13px;
-    color: var(--text-subtitle-color);
+    font-size: 0.8em;
+    color: var(--text-secundary-color);
 }
 
 .banner-dashbord{
     background: url(/src/images/backgorund-big-circles.png) no-repeat;
     background-size: cover;
-    padding: 25px 40px 100px 69px;
-    border-radius: 0 0 20px 20px;
+    padding: 1.6em 2.5em 6.25em 4.3em;
+    border-radius: 0 0 1.25em 1.25em;
     color: var(--white-color);
     display: flex;
     justify-content: space-between;
 }
 
 .banner-dashbord h1{
-    font-size: 40px;
+    font-size: 2.5em;
 }
 
 .banner-dashbord h2{
-    font-size: 23px;
+    font-size: 1.4em;
 }
 
 .banner-dashbord button{
-    height: 40px;
+    height: 2.5em;
     background-color: var(--button-announcement);
-    padding: 8px 24px;
-    border-radius: 4px;
+    padding: 0.5em 1.5em;
+    border-radius: 0.25em;
     border: none;
     color: var(--white-color);
 }
 
+.card-information{
+    background-color: var(--white-color);
+    width: 14.68em;
+    border-radius: 0.5em;
+    padding: 1.5em;
+    color: var(--text-secundary-color);
+    font-size: 1.18em;
+    transform: translateY(-50%);
+    box-shadow: 1.6em 0 1.6em rgba(0, 0, 0, 0.01);
+    gap: 0.5em;
+}
+
+.information-dashboard h4{
+    color: var(--text-default-color);
+    font-size: 1.4em;
+}
 
 
 footer{
     display: flex;
     justify-content: space-between;
-    padding: 16px 24px;
+    padding: 1em 1.5em;
     background-color: var(--white-color);
     position: absolute;
     width: 100%;
     bottom: 0;   
-    border-bottom: 5px solid var(--detail-color);
 }
 
 footer a{
@@ -142,7 +159,7 @@ footer a{
 
 .use-terms{
     display: flex;
-    gap: 24px;
+    gap: 1.5em;
     cursor: pointer;
 }
 
