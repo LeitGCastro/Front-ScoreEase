@@ -103,13 +103,80 @@ main {
 
 .sidebar{
     background-color: var(--white-color);
-    width: 16em;
+    width: 15em;
     height: 100%;
-    background-color: aqua;
     box-shadow: 1.6em 0 1.6em rgba(0, 0, 0, 0.1); 
     position: fixed;
     padding-top: 4.75em;
+    margin-top: -76px;
 }
+
+.sidebar-title{
+    font-size: 16px;
+    margin-top: 50px;
+}
+
+.logo-scorease{
+    width: 274px;
+    height: 274px;
+    transform: translateX(-12%);
+    opacity: 10%;
+}
+
+.sidebar-elements{
+    height: 100%;
+    font-size: 16px;
+}
+
+.sidebar-elements li.item-menu{
+    transition: .2s;
+}
+
+.sidebar-elements li.item-menu:hover{
+    background: #8084FE;
+    border-radius: 10%;
+}
+
+.sidebar-elements li.item-menu a{
+    font-size: 16px;
+    padding: 10px 4%;
+    display: flex;
+    margin-bottom: 4px;
+}
+
+.sidebar-elements li.item-menu a .txt-link{
+    margin-left: 20px;
+}
+
+
+ul{
+    height: 100%;
+    font-size: 16px;
+}
+
+ul li.item-menu{
+    transition: .2s;
+}
+
+ul li.item-menu:hover{
+    background: #8084FE;
+}
+
+ul li.item-menu a{
+    font-size: 16px;
+    padding: 10px 4%;
+    display: flex;
+    margin-bottom: 4px;
+}
+
+
+
+.line-menu{
+    border-bottom: 1px solid #E9ECEF;
+    
+}
+
+
 
 .arrow-sidebar{
     display: flex;
