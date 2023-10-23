@@ -17,27 +17,24 @@ header, .logo, .notification-and-profile-information, .profile-information{
 header{
     background-color: var(--white-color);
     box-shadow: 0.6em 0 1.8em rgba(0, 0, 0, 0.05);
-    max-height: 100%;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    height: 4.75em;
 }
 
 .logo{
+    display: block;
     padding: 1.5em 2em ;
-    box-shadow: 1.6em 0 1.6em rgba(0, 0, 0, 0.01);
+    box-shadow: 1.6em 0 1.6em rgba(0, 0, 0, 0.05);
+    width: 18em;
+    height: 100%;
+}
+
+.content-logo{
+    display: flex;
     gap: 0.5em;
 }
-
-.arrow-sidebar{
-    margin: auto;
-}
-
-.arrow-sidebar img{
-    background-color: var(--default-color);
-    border-radius: 50%;
-    padding: 0.3em;
-    transform: translateX(-50%);
-    cursor: pointer;
-}
-
 
 .navbar{
     padding: 1em 2em;
@@ -64,7 +61,7 @@ header{
 
 .navbar{
     width: 100%;
-    height: 100%;
+    height: 4.75em;
     justify-content: space-between;
 }
 
@@ -98,6 +95,39 @@ header{
     color: var(--text-secundary-color);
 }
 
+
+
+main {
+    margin-left: 16em;
+}
+
+.sidebar{
+    background-color: var(--white-color);
+    width: 16em;
+    height: 100%;
+    background-color: aqua;
+    box-shadow: 1.6em 0 1.6em rgba(0, 0, 0, 0.1); 
+    position: fixed;
+    padding-top: 4.75em;
+}
+
+.arrow-sidebar{
+    display: flex;
+}
+
+.arrow-sidebar img{
+    background-color: var(--default-color);
+    width: 1.9em;
+    height: 1.9em;
+    border-radius: 50%;
+    padding: 0.375em;
+    transform: translateX(-50%);
+    cursor: pointer;
+    margin: auto;
+}
+
+
+
 .banner-dashbord{
     background: url(/src/images/backgorund-big-circles.png) no-repeat;
     background-size: cover;
@@ -105,6 +135,8 @@ header{
     border-radius: 0 0 1.25em 1.25em;
     color: var(--white-color);
     display: flex;
+    width: calc(100%- 16em);
+    margin-top: 4.75em;
     justify-content: space-between;
 }
 
@@ -125,22 +157,63 @@ header{
     color: var(--white-color);
 }
 
+.summary-cards{
+    display: flex;
+    gap: 2.5em;
+    margin: 0 2.5em;
+}
+
+.general-user-information-dashboard{
+    display: flex;
+    gap: 2.5em;
+}
+
 .card-information{
+    display: flex;
     background-color: var(--white-color);
-    width: 14.68em;
     border-radius: 0.5em;
     padding: 1.5em;
     color: var(--text-secundary-color);
     font-size: 1.18em;
     transform: translateY(-50%);
-    box-shadow: 1.6em 0 1.6em rgba(0, 0, 0, 0.01);
-    gap: 0.5em;
+    box-shadow: 1.6em 0 1.6em rgba(0, 0, 0, 0.01); 
 }
 
-.information-dashboard h4{
+.general-user-information-dashboard h4{
     color: var(--text-default-color);
     font-size: 1.4em;
 }
+
+.general-user-information-dashboard h3{
+    font-size: 1.1em;    
+}
+
+
+.analyzed-leads-companies{
+    display: flex;
+    width: 29.9em;
+}
+
+.analyzed-leads-companies h3{
+    text-align: center;
+    color: var(--text-default-color);
+    font-size: 28px;
+}
+
+.analyzed-leads-companies h4{
+    font-size: 1em;
+}
+
+.prospected-companies-numb{
+    border-right: 1px solid var(--detail-color);
+    padding-right: 3.6em;
+    margin: auto;
+}
+
+.enriched-leads-numb{
+    padding-left: 3.6em;
+}
+
 
 
 footer{
@@ -148,9 +221,11 @@ footer{
     justify-content: space-between;
     padding: 1em 1.5em;
     background-color: var(--white-color);
-    position: absolute;
-    width: 100%;
+    position: fixed;
+    width: calc(100% - 16em);
+    
     bottom: 0;   
+    margin-left: 16em;
 }
 
 footer a{
@@ -162,6 +237,7 @@ footer a{
     gap: 1.5em;
     cursor: pointer;
 }
+
 
 
 
