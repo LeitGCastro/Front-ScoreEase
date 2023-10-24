@@ -103,7 +103,7 @@ main {
 
 .sidebar{
     background-color: var(--white-color);
-    width: 15em;
+    width: 16em;
     height: 100%;
     box-shadow: 1.6em 0 1.6em rgba(0, 0, 0, 0.1); 
     position: fixed;
