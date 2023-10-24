@@ -5,6 +5,17 @@ body {
   overflow-x: hidden;
   color: #67757c;
 }
+
+.content{
+  display: flex;
+  
+}
+
+.container{
+  margin-right: -749px;
+  margin-top: -50px;
+}
+
 .card {
   margin-bottom: 30px;
 }

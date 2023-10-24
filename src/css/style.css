@@ -10,6 +10,10 @@ body{
     height: 100vh;
 }
 
+main{
+    width: ;
+}
+
 header, .logo, .notification-and-profile-information, .profile-information{
     display: flex;
     z-index: 999;
@@ -97,7 +101,7 @@ header{
 
 main {
     margin-left: 16em;
-    padding-bottom: 200px;
+    /* padding-bottom: 200px; */
 }
 
 .sidebar{
@@ -321,7 +325,7 @@ ul li.item-menu{
 }
 
 .accordion{
-    max-width: 66.6em;
+    width: 66.6em;
     margin-left : 2.5em;
 }
 
@@ -467,4 +471,8 @@ footer a{
     display: flex;
     gap: 1.5em;
     cursor: pointer;
+}
+
+main{
+    background-color: #E9ECEF;
 }
